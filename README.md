@@ -1,4 +1,4 @@
-# 🧠 LangGraph Code-Along Playground
+# LangGraph Code-Along Playground
 
 Welcome to the LangGraph code-along playground!  
 This repository is designed for interactive sessions exploring LangGraph, LangChain, multi-agent systems, and LLM-powered workflows.
@@ -19,28 +19,28 @@ python3 --version
 
 ### Clone repo
 ```
-git clone https://github.com/langchain-ai/langchain-academy.git
-$ cd langchain-academy
+git clone https://github.com/nagakartheek/langgraph-agents.git
+$ cd langgraph-agents
 ```
 
 ### Create an environment and install dependencies
 #### Windows Powershell
 ```
-PS> python3 -m venv lc-academy-env
+PS> python3 -m venv venv
 PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-PS> lc-academy-env\scripts\activate
+PS> venv\scripts\activate
 PS> pip install -r requirements.txt
 ```
 #### Mac/Linux/WSL
 ```
-$ python3 -m venv lc-academy-env
-$ source lc-academy-env/bin/activate
+$ python3 -m venv venv
+$ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
 ### Setting Up Azure OpenAI Models
 
-To use Azure-hosted OpenAI models (instead of OpenAI’s native API), follow these steps to get your **API Key**, **Endpoint**, and **Deployment Name** configured.
+To use Azure-hosted OpenAI models, follow these steps to get your **API Key**, **Endpoint**, and **Deployment Name** configured.
 
 #### Step 1: Create an Azure OpenAI Resource
 
