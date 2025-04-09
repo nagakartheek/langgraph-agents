@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+lc-academy-env/
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# LangGraph Studio generated files
+studio/.langgraph/
+studio/.cache/
+
+# pyright / mypy / pytype
+.pytype/
+.mypy_cache/
+.pyre/
