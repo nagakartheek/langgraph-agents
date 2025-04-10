@@ -26,21 +26,39 @@ $ cd langgraph-agents
 ### Create an environment and install dependencies
 #### Windows Powershell
 ```
-PS> python3 -m venv venv
+PS> python -m venv venv
 PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 PS> venv\scripts\activate
 PS> pip install -r requirements.txt
 ```
 #### Mac/Linux/WSL
 ```
-$ python3 -m venv venv
+$ python -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
+After activating venv, run this command to register the virtual environment inside the jupyter kernel.
+```
+python -m ipykernel install --user --name=venv --display-name "Python (LG-env)"
+```
+* --name=myenv: the internal name of the kernel
+* --display-name: how it will appear in the Jupyter UI
+Then, when the Jupyter Notebook or Lab is opened, you can choose "Python (LG-env)" as the kernel for the notebook.
+
+### Setting Up .env
+
+1. Navigate to the `experiments/` folder:
+2. Copy the example environment file to create your own `.env` file:
+```
+cd experiments
+cp .env.example .env
+```
+Now, we are ready to update these values in the next stages.
 
 ### Setting Up Azure OpenAI Models
 
 To use Azure-hosted OpenAI models, follow these steps to get your **API Key**, **Endpoint**, and **Deployment Name** configured.
+If you already deployed Azure OpenAI models, directly skip to the 3rd step.
 
 #### Step 1: Create an Azure OpenAI Resource
 
@@ -106,7 +124,7 @@ TAVILY_API_KEY="<your_tavily_api_key>"
 ```
 
 ### Running notebooks
-Once everything is ready and setup, run the jupyter notebooks by running in the terminal
+Once everything is ready and setup, run the jupyter notebooks by running in the terminal.
 ```
 $ jupyter notebook
 ```

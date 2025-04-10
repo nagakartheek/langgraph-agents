@@ -1,4 +1,5 @@
 python-dotenv
+ipykernel
 langgraph
 langgraph-sdk
 langgraph-checkpoint-sqlite
@@ -11,3 +12,5 @@ tavily-python
 wikipedia
 trustcall
 langgraph-cli[inmem]
+pyppeteer
+nest_asyncio
